@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #000;
+  color: #111;
+}
+
+.top-banner-wrapper {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
+.top-banner {
+  background: url("zolotye-fon.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-banner .top-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+  z-index: 1;
+}
+
+.top-banner * {
+  position: relative;
+  z-index: 2;
+}
+
+.top-banner .avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 1rem;
+}
+
+.top-banner h1 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.top-banner .tagline {
+  font-size: 1rem;
+  font-style: italic;
+  max-width: 600px;
+  margin: auto;
+}
+
+main.light-section {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fdfcfb;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h2 {
+  color: #222;
+  margin-top: 2rem;
+}
+
+code {
+  background: #eee;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #111;
+}
+
+a {
+  color: #0033cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  padding-left: 1.2em;
+}
+
+.staking-widget {
+  margin-top: 2rem;
+  text-align: center;
+}

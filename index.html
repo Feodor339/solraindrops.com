@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SOLrainDrops Validator</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .copy-toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #111;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+      font-size: 0.9em;
+    }
+  </style>
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text);
+      showCopyToast("Copied: " + text);
+    }
+
+    function showCopyToast(message) {
+      let toast = document.createElement("div");
+      toast.className = "copy-toast";
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.style.opacity = 1, 10);
+      setTimeout(() => {
+        toast.style.opacity = 0;
+        setTimeout(() => toast.remove(), 300);
+      }, 2000);
+    }
+  </script>
+</head>
+
+<body class="main-page">
+  <div class="top-banner-wrapper">
+    <header class="top-banner">
+      <div class="top-overlay"></div>
+      <img src="logo.png" alt="Validator Avatar" class="avatar">
+      <h1>Validator: SOLrainDrops</h1>
+      <p class="tagline"><em>High-performance Solana validator with a responsible approach, delivering strong performance for optimal returns. <br>Everything is always under control. "I just do my job."</em></p>
+    </header>
+  </div>
+
+  <main class="light-section">
+    <section class="info-block">
+      <h2>Validator Info</h2>
+      <p><strong>Name:</strong> <code onclick="copyToClipboard('SOLrainDrops')">SOLrainDrops</code></p>
+      <p><strong>Identity:</strong> <code onclick="copyToClipboard('EWARp8Syq8cTWGWHtP5LT9fKAn5GvXfSCH8LfAwpgQ6m')">EWARp8Syq8cTWGWHtP5LT9fKAn5GvXfSCH8LfAwpgQ6m</code></p>
+      <p><strong>Vote Key:</strong> <code onclick="copyToClipboard('4BVYjw1ztUzUPsxsaCheWWwThT2X4rjogZytGnuWPUGg')">4BVYjw1ztUzUPsxsaCheWWwThT2X4rjogZytGnuWPUGg</code></p>
+    </section>
+
+    <section>
+      <h2>How to Stake</h2>
+      <ol>
+        <li>Open <a href="https://solflare.com" target="_blank">Solflare</a> or <a href="https://phantom.app" target="_blank">Phantom</a> wallet</li>
+        <li>Select “Staking” → “Delegate”</li>
+        <li>Enter the validator identity:</li>
+        <code onclick="copyToClipboard('EWARp8Syq8cTWGWHtP5LT9fKAn5GvXfSCH8LfAwpgQ6m')">EWARp8Syq8cTWGWHtP5LT9fKAn5GvXfSCH8LfAwpgQ6m</code>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>0% commission</li>
+        <li>Jito MEV support</li>
+        <li>High uptime stability</li>
+        <li>2 backup servers in different data centers</li>
+      </ul>
+    </section>
+
+    <section class="staking-widget">
+      <iframe
+          id="staking-kiwi-widget-0"
+          scrolling="no"
+          frameborder="0"
+          allowtransparency="true"
+          allowfullscreen="true"
+          style="position: static; visibility: visible; width: 472px; height: 302px"
+          title="Staking Kiwi widget"
+          src="https://widget.staking.kiwi/?validator=4BVYjw1ztUzUPsxsaCheWWwThT2X4rjogZytGnuWPUGg&theme=dark"
+        ></iframe>
+      <script src="https://widget.staking.kiwi/js/widget.min.js"></script>
+    </section>
+
+    <section>
+      <a href="security.html">→ Security and Responsibility</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SOLrainDrops</p>
+  </footer>
+</body>
+</html>
