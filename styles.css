@@ -3,6 +3,17 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  color: #111;
+}
+
+/* чорний фон тільки на головній сторінці */
+body.main-page {
+  background-color: #000;
+  color: #fff;
+}
+
+/* білий блок на чорному фоні для security.html */
+body.light-page {
   background-color: #000;
   color: #111;
 }
@@ -63,6 +74,7 @@ main.light-section {
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #111; /* ← додай цей рядок */
 }
 
 h2 {
@@ -96,4 +108,14 @@ ul, ol {
 .staking-widget {
   margin-top: 2rem;
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #b211f2;
+}
+
+.footer-text {
+  margin: 0;
 }
